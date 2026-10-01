@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Drive Motion offers premium cars, financing help, and expert servicing for modern drivers."
+    />
+    <title>Drive Motion | Premium Cars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Drive Motion home">
+          <span class="brand-mark">D</span>
+          <span>Drive Motion</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#inventory">Inventory</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-ghost">Book a Test Drive</a>
+          <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Find your perfect drive</p>
+            <h1>Luxury performance built for everyday life.</h1>
+            <p class="lead">
+              Discover premium vehicles, flexible financing, and expert support from a team that cares about your next journey.
+            </p>
+            <div class="hero-actions">
+              <a href="#inventory" class="btn btn-primary">Explore Inventory</a>
+              <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+
+            <ul class="quick-stats" aria-label="Company quick stats">
+              <li><strong>1.2k+</strong><span>happy drivers</span></li>
+              <li><strong>24/7</strong><span>support</span></li>
+              <li><strong>4.9/5</strong><span>customer rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured car image">
+            <div class="visual-card card-main">
+              <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+                alt="Luxury sports car in front of a city skyline"
+              />
+            </div>
+            <div class="visual-card card-badge">
+              <p>Featured model</p>
+              <strong>2025 A8 RS</strong>
+              <span>From $74,500</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands">
+        <div class="container brand-row" aria-label="Partner brands">
+          <span>BMW</span>
+          <span>Audi</span>
+          <span>Mercedes</span>
+          <span>Tesla</span>
+          <span>Porsche</span>
+          <span>Range Rover</span>
+        </div>
+      </section>
+
+      <section id="inventory" class="inventory section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Featured inventory</p>
+              <h2>Choose the car that fits your style.</h2>
+            </div>
+            <div class="filter-bar" aria-label="Vehicle categories">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="sedan">Sedan</button>
+              <button class="filter-btn" data-filter="suv">SUV</button>
+              <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+          </div>
+
+          <div class="car-grid">
+            <article class="car-card" data-category="sedan">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80" alt="BMW Sedan" />
+              <div class="car-card-body">
+                <div class="car-head">
+                  <div>
+                    <p class="car-label">Sedan</p>
+                    <h3>BMW 3 Series</h3>
+                  </div>
+                  <span class="price">$41,900</span>
+                </div>
+                <ul>
+                  <li>Automatic</li>
+                  <li>2.0L Turbo</li>
+                  <li>Rear Wheel Drive</li>
+                </ul>
+                <div class="card-actions">
+                  <button class="btn btn-primary small">View Details</button>
+                  <button class="btn btn-ghost small">Book Test Drive</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card" data-category="suv">
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80" alt="SUV car" />
+              <div class="car-card-body">
+                <div class="car-head">
+                  <div>
+                    <p class="car-label">SUV</p>
+                    <h3>Audi Q7</h3>
+                  </div>
+                  <span class="price">$56,200</span>
+                </div>
+                <ul>
+                  <li>7 Seats</li>
+                  <li>Quattro AWD</li>
+                  <li>Panoramic Roof</li>
+                </ul>
+                <div class="card-actions">
+                  <button class="btn btn-primary small">View Details</button>
+                  <button class="btn btn-ghost small">Book Test Drive</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card" data-category="luxury">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Luxury car" />
+              <div class="car-card-body">
+                <div class="car-head">
+                  <div>
+                    <p class="car-label">Luxury</p>
+                    <h3>Mercedes S-Class</h3>
+                  </div>
+                  <span class="price">$96,100</span>
+                </div>
+                <ul>
+                  <li>Luxury Trim</li>
+                  <li>Hybrid</li>
+                  <li>Executive Package</li>
+                </ul>
+                <div class="card-actions">
+                  <button class="btn btn-primary small">View Details</button>
+                  <button class="btn btn-ghost small">Book Test Drive</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="car-card" data-category="sedan">
+              <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80" alt="Performance sedan" />
+              <div class="car-card-body">
+                <div class="car-head">
+                  <div>
+                    <p class="car-label">Performance</p>
+                    <h3>Porsche Taycan</h3>
+                  </div>
+                  <span class="price">$89,400</span>
+                </div>
+                <ul>
+                  <li>Electric</li>
+                  <li>Launch Control</li>
+                  <li>Premium Sound</li>
+                </ul>
+                <div class="card-actions">
+                  <button class="btn btn-primary small">View Details</button>
+                  <button class="btn btn-ghost small">Book Test Drive</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="why-us" class="benefits section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Why drivers choose us</p>
+            <h2>Buying a car should feel effortless.</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <div class="benefit-item">
+              <div class="icon">01</div>
+              <h3>Transparent pricing</h3>
+              <p>No hidden fees, no surprises. We help you understand every cost before you sign.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="icon">02</div>
+              <h3>Flexible financing</h3>
+              <p>Customized payment plans designed around your budget and driving goals.</p>
+            </div>
+            <div class="benefit-item">
+              <div class="icon">03</div>
+              <h3>Certified quality</h3>
+              <p>Every vehicle is inspected and backed by a dealership team you can trust.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section accent-bg">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Complete automotive care</p>
+            <h2>Everything your car needs, all in one place.</h2>
+          </div>
+
+          <div class="service-grid">
+            <div class="service-box">
+              <h3>New & used sales</h3>
+              <p>Premium collection of vehicles for every lifestyle, from city commutes to weekend escapes.</p>
+            </div>
+            <div class="service-box">
+              <h3>Trade-ins</h3>
+              <p>Get a fair value for your current vehicle and put it toward your next purchase.</p>
+            </div>
+            <div class="service-box">
+              <h3>Maintenance & repair</h3>
+              <p>Factory-trained technicians keep your vehicle running safely and smoothly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Customer stories</p>
+            <h2>Drivers love the experience.</h2>
+          </div>
+
+          <div class="review-grid">
+            <blockquote class="review-card">
+              “The process was smooth from start to finish. Their team listened to what I wanted and delivered the perfect SUV.”
+              <footer>
+                <strong>Amelia R.</strong>
+                <span>BMW X5 Buyer</span>
+              </footer>
+            </blockquote>
+            <blockquote class="review-card">
+              “Great financing options and a dealership that actually made the process easy. I felt confident every step of the way.”
+              <footer>
+                <strong>Marcus T.</strong>
+                <span>Audi A6 Buyer</span>
+              </footer>
+            </blockquote>
+            <blockquote class="review-card">
+              “I booked a service appointment and the team was courteous, fast, and honest. That kind of trust is rare.”
+              <footer>
+                <strong>Daniel K.</strong>
+                <span>Service Customer</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <p class="eyebrow">Get in touch</p>
+            <h2>Ready to drive away in your next car?</h2>
+            <p>Speak with our team today for vehicle recommendations, financing help, or a quick test drive.</p>
+            <ul>
+              <li>📍 248 Harbor Avenue, Los Angeles, CA</li>
+              <li>📞 (310) 555-0142</li>
+              <li>✉️ sales@drivemotion.com</li>
+            </ul>
+          </div>
+
+          <form class="contact-form">
+            <label>
+              Full name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email address
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" placeholder="Tell us what you are looking for"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2025 Drive Motion. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#inventory">Inventory</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
